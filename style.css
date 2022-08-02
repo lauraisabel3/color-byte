@@ -55,11 +55,6 @@ header {
   line-height: 1.2rem;
 }
 
-#main__img {
-  width: 526px;
-  height: 325px;
-}
-
 .icons__container {
   width: auto;
   height: auto;
@@ -118,7 +113,6 @@ header {
   font-weight: 700;
 }
 
-
 #comments__container {
   width: 100%;
   padding: 12px 25px;
@@ -161,11 +155,15 @@ header {
   background-color: inherit;
 }
 
-#submit {
-  width: 20px;
-  height: 20px;
-  background-color: red;
+#comment__input:focus {
+  outline: none;
 }
+
+#comment__input::placeholder {
+  font-size: 1.4rem;
+  font-family: inherit;
+}
+
 #comment__button {
   width: 80px;
   height: 100%;
@@ -175,15 +173,6 @@ header {
   font-weight: 700;
   color: #3D8AFF;
   cursor: pointer;
-}
-
-#comment__input:focus {
-  outline: none;
-}
-
-#comment__input::placeholder {
-  font-size: 1.4rem;
-  font-family: inherit;
 }
 
 .swiper {

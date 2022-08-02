@@ -36,15 +36,11 @@ const getComment = () => {
   newComment.appendChild(text);
   newComment.textContent != "" && container.appendChild(newComment);
 
-  inputValue = '';
+  let input = document.getElementById('comment__input');
+  input.value = '';
 }
 
-
-
-let button = document.getElementById('submit')
-button.addEventListener('click', submit)
-
 let commentButton = document.getElementById("comment__button");
-commentButton.addEventListener("click", getComment, submit )
+commentButton.addEventListener("click", getComment)
 
 
