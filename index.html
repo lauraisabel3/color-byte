@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="./assets/Ellipse 1.png" class="header__img">
+      <h5 class="header__name">Erik Dunlop<span>San Francisco, California</span></h5>
+    </header>
+    <main>
+      <!-- <div class="swiper" >
+        <div class="swiper-wrapper" >
+          <div class="swiper-slide">
+            <img src="./assets/01.jpg" ></img>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/Ellipse 1.png"></img>
+          </div>
+        </div>
+        <button class="swiper-button-prev"></button>
+        <button class="swiper-button-next"></button>
+      </div> -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="icons__container">
+        <i class="icon__like"></i>
+        <i class="icon__comment"></i>
+        <i class="icon__send"></i>
+      </div>
+      <div class="description__container">
+        <p><span>Lucas Credie</span> sit amet, consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et tristique proin. Mi enim ut eu cras ultrices eget et tristique proin.</p>
+      </div>
+      <div>
+        <div id="comments__container">
+          <p id="comment">consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et </p>
+        </div>
+      </div>
+      <div class="comment__container">
+        <label class="comment__label">
+          <input id="comment__input" type="text">
+        </label>
+        <button id="comment__button">Post</button>
+      </div>
+    </main>
+  </div>
+  <script  src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
+    const swiper = new Swiper('.swiper', {
+    modules: [Navigation],
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+},
+})
+  </script>
+  <script src="./script.js"></script>
+</body>
+</html>
