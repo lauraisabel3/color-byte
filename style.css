@@ -15,7 +15,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
   font-family: 'Inter', sans-serif;
 }
 
@@ -23,7 +22,7 @@ body {
   width: 100%;
   max-width: 526px;
   background: #F1F1F1;
-  border: 1px solid grey;
+  border: 1px solid #d3d1d1;
 }
 
 header {
@@ -69,14 +68,23 @@ header {
   align-items: center;
 }
 
-.icon__like {
+.icon__like-white {
+  width: 24px;
+  height: 21px;
+  margin-right: 8px;
+  background-size: cover;
+  background-position: center;
+  background-image:url('./assets/like-white.svg');
+  cursor: pointer;
+}
+
+.icon__like-red {
   width: 24px;
   height: 20px;
   margin-right: 8px;
-  background: #F1F1F1;
   background-size: cover;
   background-position: center;
-  background-image:url('./assets/like.svg');
+  background-image:url('./assets/like-red.svg');
   cursor: pointer;
 }
 
@@ -145,13 +153,19 @@ header {
 }
 
 #comment__input {
-  width: 350px;
+  width: 300px;
+  max-width: 350px;
   min-height: 55px;
   padding-left: 12px;
   border: none;
   background-color: inherit;
 }
 
+#submit {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
 #comment__button {
   width: 80px;
   height: 100%;
@@ -172,7 +186,16 @@ header {
   font-family: inherit;
 }
 
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
+.swiper {
+  height: 300px;
+}
+
+.swiper-button-prev {
+  background: none;
+  border: none;
+}
+
+.swiper-button-next {
+  background: none;
+  border: none;
 }
